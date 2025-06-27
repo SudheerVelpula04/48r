@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+   <header>
+    <center>
+        <h2>Student Name</h2>
+
+        <nav>
+            <span><a href="#about">About</a></span>|
+            <span><a href="#skils">Skils</a></span>|
+            <span><a href="#education">Education</a></span>|
+            <span><a href="#project">Projects</a></span>|
+            <span><a href="#contact">Contact</a></span>
+        </nav>
+
+    </center>
+   </header> 
+   <hr>
+   <main>
+                <section>
+                <h3 id="about"><u><b>About Me:</b></u></h3>
+                <center>
+                    <img src="./images/cat.jpeg" alt="cat" width="200" style="border-radius: 50%;">
+                </center>
+                <p>
+                    Hello! I am a student learning <span contenteditable="true">HTML</span>. This is my personal portfolio website.
+
+                </p>
+                </section>
+                <hr>
+                <section>
+                    <h3 id="skils"><u><b>Skils</b></u></h3>
+                    <ul>
+                        <li>Html</li>
+                        <li>css</li>
+                        <li>JS</li>
+                    </ul>
+                </section>
+                <hr>
+                <section>
+                    <h3 id="education"><b><u>Education</u></b></h3>
+                    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+                        <tr align="center">
+                            <td>Btech</td>
+                            <td>SSN Engineering clg</td>
+                            <td>2025</td>
+                        </tr>
+                        <tr align="center">
+                            <td>INTER</td>
+                            <td>SRI CHAI</td>
+                            <td>2021</td>
+                        </tr>
+                        <tr align="center">
+                            <td>SSC</td>
+                            <td>SGGS</td>
+                            <td>2019</td>
+                        </tr>
+                    </table>
+                </section>
+                <hr>
+                <section>
+                    <h3 id="project">My Projects</h3>
+                    <dl>
+                        <dt>project</dt>
+                        <dd>
+                            A project is a temporary endeavor undertaken to create a unique product, 
+                            service, or result. It's characterized by a defined beginning and end, 
+                            specific objectives, and a set of tasks designed to achieve those
+                             objectives. Examples include building a house, 
+                            developing a new software application, or conducting a research study. 
+                        </dd>
+                    </dl>
+                </section>
+                <hr>
+                <section>
+                    <h3 id="contact">Contact</h3>
+                    <center>
+                        <form action="./index.html">
+                         <table cellpadding="10">
+                        <tr align="center">
+                            <td>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required >
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>
+                                <label for="email">Email:</label>
+                                <input type="text" id="email" name="email" required >
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>
+                                <label for="gender">Gender:</label>
+                                <label for="male">Male</label>
+                                <input type="radio" id="male" name="gender" required value="male">
+                                <label for="female">Female</label>
+                                <input type="radio" id="female" name="gender" required value="Female">
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>
+                                <label for="Course">Course</label>
+                                <select name="Course" id="Course">
+                                    <option value="BSC">BSC</option>
+                                    <option value="Btech">Btech</option>
+                                    <option value="AIML">AIML</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="address">Address</label>
+                                <textarea name="addres" id="address" rows="7" cols="20">
+                                        text hear address.....
+                                </textarea>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>
+                                <input type="submit">
+                                <button onclick="alert('hello ')">Submit</button>
+                            </td>
+                        </tr>
+                    </table>
+                    </form>
+                    </center>
+                   
+                </section>
+                <hr>
+                <section>
+                    
+                    <center>
+                        <h3>My video</h3>
+                        <div>
+                            <video width="400" controls autoplay muted loop>
+                                <source src="./video/sample-3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <h3>My Audio</h3>
+                        <div>
+                            <audio controls autoplay muted loop>
+                                <source src="./songs/[iSongs.info] 04 - Maata Vinaali.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="./images/panda.jpg" media="(min-width:700px)" >
+                                <source srcset="./images/tiger.jpg" media="(min-width:400px)">
+                                <img src="./images/cat.jpeg" alt="cat"style="width:100px">
+                            </picture>
+                        </div>
+                    </center>
+
+                </section>
+   </main>
+   <hr>
+   <footer>
+    <section>
+       <center>
+         <h3>My Location</h3>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1269.893450180285!2d78.40157857971205!3d17.48933054022401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91059772d4e3%3A0x9663160409c3de72!2sTrinath%20Electrical%20Works!5e0!3m2!1sen!2sin!4v1751017111968!5m2!1sen!2sin" frameborder="0" width="400"></iframe>
+         <p>&copy; 2025 [Student Name]. All rights reserved.</p>
+       </center>
+    </section>
+    <section>
+        <center>
+            <p>Follow me: <a href="">LinkedIn</a> | <a href="">GitHub</a></p>
+        </center>
+    </section>
+   </footer>
+</body>
+</html>
